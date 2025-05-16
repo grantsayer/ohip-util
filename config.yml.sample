@@ -1,0 +1,31 @@
+---
+production:
+  client_id: PROD_CLIENT_ID
+  client_secret: PROD_CLIENT_SECRET
+  api_key: PROD_API_KEY
+  username: PROD_USERNAME
+  password: PROD_PASSWORD
+  base_url: https://production-api-hostname.example.com
+uat:
+  client_id: UAT_CLIENT_ID
+  client_secret: UAT_CLIENT_SECRET
+  api_key: UAT_API_KEY
+  username: UAT_USERNAME
+  password: UAT_PASSWORD
+  base_url: https://uat-api-hostname.example.com
+hotel_ids:
+- ABC
+- DEF
+- GHI
+options:
+  perform_migration: false
+  dry_run: true
+  max_profiles: 10
+  migrate_rates: true
+  target_hotels:
+  - ABC
+  save_reports: true
+  batch_size: 100
+  pause_duration: 5
+  include_profile_ids: [ABC123]
+  exclude_profile_ids: []
